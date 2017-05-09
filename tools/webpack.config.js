@@ -21,7 +21,7 @@ module.exports = {
         loaders: [
             {
                 loader: 'babel-loader',
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 query: packageJson.babel
             },
@@ -36,9 +36,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Spinbox TDD",
-            template: "assets/index.html",
-            inject: "body"
+            title: 'Spinbox TDD',
+            template: 'assets/index.html',
+            inject: 'body'
         })
     ]
 };
