@@ -24,14 +24,7 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 query: packageJson.babel
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    { loader: 'style-loader' },
-                    { loader: 'css-loader' },
-                ],
-            },
+            }
         ]
     },
     plugins: [
